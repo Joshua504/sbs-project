@@ -1,0 +1,34 @@
+.aboutsk {
+	padding-top: 90px;
+	background-image: url("/sbs-html/images/about_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-content: center;
+  place-items: center;
+  color: $secondary-txt-color;
+
+  .aboutsk__item1{
+    width: 65%;
+
+    .aboutsk__Ltxt{
+      @include subHdLtxt;
+      width: 30%;
+    }
+    .about__Mtxt{
+      @include subHdMtxt;
+      padding-bottom: $txt-sm-pb;
+    } 
+    .about__Smtxt{
+      @include smTxt;
+    }
+  }
+  .aboutsk__item2{
+    width: 85%;
+
+    .aboutsk__img1{
+      width: 100%;
+    }
+  }
+}

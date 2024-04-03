@@ -1,0 +1,35 @@
+.banner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: $body-P;
+
+	.banner__Item1 {
+		width: 35%;
+		height: 50%;
+		color: $primary-txt-color;
+
+		.banner__Ltxt {
+			font-size: $font-xxl;
+			padding: $bannerLtxt-Py;
+		}
+		.banner__Smtxt {
+			@include smTxt;
+		}
+	}
+	.banner__item2 {
+		width: 55%;
+
+		.banner__img2 {
+			width: 100%;
+		}
+	}
+	.banner__item3 {
+		width: 20%;
+
+		.ctrBtn {
+			@include ctrbtn;
+		}
+	}
+}

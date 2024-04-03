@@ -1,0 +1,51 @@
+/* --------------------------------- colors --------------------------------- */
+$primarybg-color: #FFFFFF;
+$secondarybg-color: #3E0BCE;
+$basicBg-color: #F0390F;
+$primary-txt-color: #2B2B2B;
+$secondary-txt-color: #FFFFFF;
+
+/* --------------------------------- padding -------------------------------- */
+$body-Py: 90px 0;
+$body-P: 0 30px 90px;
+$body-px: 0 30px;
+$navCon-p: 27px 30px;
+$navLinks-p: 15px 30px;
+$bannerLtxt-Py: 60px 0;
+$subheadCon-pb: 60px;
+$txt-sm-pb: 29px;
+$card-p: 40px 50px 75px;
+$cardMtxt-Py: 30px 0;
+$subheadLtxt-pb: 30px;
+$review-sm-p: 0 20px 40px; 
+$review-m-p: 0 40px 60px; 
+$reviewQuote-py: 25px 0; 
+$footerCon-sm-px: 0 15px;
+$footerCon-sm-pl: 40px;
+$footerBtxt-pb: 15px;
+$footerCopy-py: 25px;
+
+/* --------------------------------- margin --------------------------------- */
+$card-mb: 58px;
+$video-mb: 35px;
+$reviewBtxt-mt: 38px;
+$review-m-mx: 0 20px; 
+$footerCopy-mt: 90px;
+
+/* ------------------------------- font-sizes ------------------------------- */
+$baseFont: 1rem;
+$font-xxl: 4.375rem;
+$font-xl: 2.8125rem;
+$font-l: 1.875rem;
+$font-m: 1.5625rem;
+$font-sm: 1.0625rem;
+$font-xsm: $baseFont; 
+
+/* ------------------------------- font-weight ------------------------------ */
+$fontW-xxl: 700;
+
+/* ------------------------------- font-family ------------------------------ */
+$baseFontfamily: 'Poppins', sans-serif;
+
+/* ------------------------------- transitions ------------------------------ */
+  $normal-trn: all .5s linear;

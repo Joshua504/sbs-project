@@ -1,0 +1,54 @@
+.skClass {
+	padding: 90px 0 30px;
+
+	.skClass__item1 {
+		text-align: center;
+		padding-bottom: $subheadCon-pb;
+		color: $primary-txt-color;
+
+		.skClass__Ltxt {
+			@include subHdLtxt;
+			padding-bottom: 0;
+		}
+		.skClass__Mtxt {
+			@include subHdMtxt;
+		}
+	}
+	.skClass__item2 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 1em;
+
+		.skClass__cardcon {
+			width: 27%;
+			padding: 0 15px;
+
+			.skClass__card {
+				padding: $card-p;
+				background: $basicBg-color;
+				border-radius: 15px;
+				margin-bottom: $card-mb;
+				text-align: center;
+				color: $secondary-txt-color;
+
+				.skClass__Mtxt {
+					font-size: $font-m;
+					padding: $cardMtxt-Py;
+					text-transform: capitalize;
+				}
+				.skClass__smTxt {
+					font-size: $font-xsm;
+					line-height: 28px;
+				}
+			}
+			.skClass--cardmod {
+				background: $secondarybg-color;
+			}
+		}
+		.skClass__ext {
+			@include smTxt;
+			color: $primary-txt-color;
+		}
+	}
+}

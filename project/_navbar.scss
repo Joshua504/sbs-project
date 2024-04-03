@@ -1,0 +1,45 @@
+.nav{
+  display: flex;
+  justify-content: space-between;
+  padding: $navCon-p;
+
+  .logocon{
+    display: flex;
+    align-items: center;
+
+    .harmburger{
+      cursor: pointer;
+      display: none;
+
+      .bars{
+        height: 4px;
+        width: 30px;
+        border-radius: 20px;
+        background: $primary-txt-color;
+        display: block;
+        margin-bottom: 4px;
+      }
+    }
+  }
+
+  .nav__linkcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+
+    .nav__links{
+      font-size: $font-sm;
+      text-transform: capitalize;
+      color: $primary-txt-color;
+      padding: $navLinks-p;
+      border-radius: 50px;
+      transition: .4s ease-in;
+
+      &:hover{
+        background-color: $basicBg-color;
+        color: $secondary-txt-color;
+      }
+    }
+  }
+}

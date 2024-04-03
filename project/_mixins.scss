@@ -1,0 +1,63 @@
+@mixin sm-mediaquery() {
+	@media (max-width: 760px) {
+		@content;
+	}
+}
+/* ------------------------------ readmore-txt ------------------------------ */
+@mixin smTxt {
+	font-size: $font-sm;
+	text-transform: uppercase;
+	font-weight: $fontW-xxl;
+	cursor: pointer;
+
+	&:hover {
+		color: $basicBg-color;
+	}
+
+	&::after {
+		content: " ";
+		height: 5px;
+		width: 0px;
+		border-radius: 20px;
+		display: inline-block;
+		background: $basicBg-color;
+	}
+	&:hover::after {
+		animation: smBar 0.5s ease;
+		width: 100px;
+	}
+}
+@keyframes smBar {
+	0% {
+		width: 0px;
+	}
+	100% {
+		width: 100px;
+	}
+}
+/* ------------------------------- ctrButtons ------------------------------- */
+@mixin ctrbtn {
+	height: 50px;
+	width: 50px;
+	background-color: $secondarybg-color;
+	border-radius: 50px;
+	display: inline-block;
+	padding: 10px 20px;
+	cursor: pointer;
+	transition: $normal-trn;
+
+	&:hover {
+		background: $basicBg-color;
+	}
+}
+/* ------------------------------ sub-headings ------------------------------ */
+@mixin subHdLtxt {
+	font-size: $font-xl;
+	text-transform: capitalize;
+  padding-bottom: $subheadLtxt-pb;
+}
+@mixin subHdMtxt {
+	font-size: $font-sm;
+	padding-top: 15px;
+  line-height: 30px;
+}

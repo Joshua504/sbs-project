@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+/* --------------------------------- variables -------------------------------- */
+/* --------------------------------- colors --------------------------------- */
+/* --------------------------------- padding -------------------------------- */
+/* --------------------------------- margin --------------------------------- */
+/* ------------------------------- font-sizes ------------------------------- */
+/* ------------------------------- font-weight ------------------------------ */
+/* ------------------------------- font-family ------------------------------ */
+/* ------------------------------- transitions ------------------------------ */
+/* ---------------------------------- reset --------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: transparent;
+  border: none;
+}
+
+body {
+  background: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+}
+
+/* --------------------------------- mixins --------------------------------- */
+/* ------------------------------ readmore-txt ------------------------------ */
+@keyframes smBar {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 100px;
+  }
+}
+/* ------------------------------- ctrButtons ------------------------------- */
+/* ------------------------------ sub-headings ------------------------------ */
+/* --------------------------------- navbar --------------------------------- */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 27px 30px;
+}
+.nav .logocon {
+  display: flex;
+  align-items: center;
+}
+.nav .logocon .harmburger {
+  cursor: pointer;
+  display: none;
+}
+.nav .logocon .harmburger .bars {
+  height: 4px;
+  width: 30px;
+  border-radius: 20px;
+  background: #2B2B2B;
+  display: block;
+  margin-bottom: 4px;
+}
+.nav .nav__linkcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+.nav .nav__linkcon .nav__links {
+  font-size: 1.0625rem;
+  text-transform: capitalize;
+  color: #2B2B2B;
+  padding: 15px 30px;
+  border-radius: 50px;
+  transition: 0.4s ease-in;
+}
+.nav .nav__linkcon .nav__links:hover {
+  background-color: #F0390F;
+  color: #FFFFFF;
+}
+
+/* --------------------------------- banner --------------------------------- */
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 30px 90px;
+}
+.banner .banner__Item1 {
+  width: 35%;
+  height: 50%;
+  color: #2B2B2B;
+}
+.banner .banner__Item1 .banner__Ltxt {
+  font-size: 4.375rem;
+  padding: 60px 0;
+}
+.banner .banner__Item1 .banner__Smtxt {
+  font-size: 1.0625rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
+.banner .banner__Item1 .banner__Smtxt:hover {
+  color: #F0390F;
+}
+.banner .banner__Item1 .banner__Smtxt::after {
+  content: " ";
+  height: 5px;
+  width: 0px;
+  border-radius: 20px;
+  display: inline-block;
+  background: #F0390F;
+}
+.banner .banner__Item1 .banner__Smtxt:hover::after {
+  animation: smBar 0.5s ease;
+  width: 100px;
+}
+.banner .banner__item2 {
+  width: 55%;
+}
+.banner .banner__item2 .banner__img2 {
+  width: 100%;
+}
+.banner .banner__item3 {
+  width: 20%;
+}
+.banner .banner__item3 .ctrBtn {
+  height: 50px;
+  width: 50px;
+  background-color: #3E0BCE;
+  border-radius: 50px;
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+.banner .banner__item3 .ctrBtn:hover {
+  background: #F0390F;
+}
+
+/* ------------------------------ skating-class ----------------------------- */
+.skClass {
+  padding: 90px 0 30px;
+}
+.skClass .skClass__item1 {
+  text-align: center;
+  padding-bottom: 60px;
+  color: #2B2B2B;
+}
+.skClass .skClass__item1 .skClass__Ltxt {
+  font-size: 2.8125rem;
+  text-transform: capitalize;
+  padding-bottom: 30px;
+  padding-bottom: 0;
+}
+.skClass .skClass__item1 .skClass__Mtxt {
+  font-size: 1.0625rem;
+  padding-top: 15px;
+  line-height: 30px;
+}
+.skClass .skClass__item2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.skClass .skClass__item2 .skClass__cardcon {
+  width: 27%;
+  padding: 0 15px;
+}
+.skClass .skClass__item2 .skClass__cardcon .skClass__card {
+  padding: 40px 50px 75px;
+  background: #F0390F;
+  border-radius: 15px;
+  margin-bottom: 58px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.skClass .skClass__item2 .skClass__cardcon .skClass__card .skClass__Mtxt {
+  font-size: 1.5625rem;
+  padding: 30px 0;
+  text-transform: capitalize;
+}
+.skClass .skClass__item2 .skClass__cardcon .skClass__card .skClass__smTxt {
+  font-size: 1rem;
+  line-height: 28px;
+}
+.skClass .skClass__item2 .skClass__cardcon .skClass--cardmod {
+  background: #3E0BCE;
+}
+.skClass .skClass__item2 .skClass__ext {
+  font-size: 1.0625rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  color: #2B2B2B;
+}
+.skClass .skClass__item2 .skClass__ext:hover {
+  color: #F0390F;
+}
+.skClass .skClass__item2 .skClass__ext::after {
+  content: " ";
+  height: 5px;
+  width: 0px;
+  border-radius: 20px;
+  display: inline-block;
+  background: #F0390F;
+}
+.skClass .skClass__item2 .skClass__ext:hover::after {
+  animation: smBar 0.5s ease;
+  width: 100px;
+}
+
+/* ------------------------------ aboutsection ------------------------------ */
+.aboutsk {
+  padding-top: 90px;
+  background-image: url("/sbs-html/images/about_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-content: center;
+  place-items: center;
+  color: #FFFFFF;
+}
+.aboutsk .aboutsk__item1 {
+  width: 65%;
+}
+.aboutsk .aboutsk__item1 .aboutsk__Ltxt {
+  font-size: 2.8125rem;
+  text-transform: capitalize;
+  padding-bottom: 30px;
+  width: 30%;
+}
+.aboutsk .aboutsk__item1 .about__Mtxt {
+  font-size: 1.0625rem;
+  padding-top: 15px;
+  line-height: 30px;
+  padding-bottom: 29px;
+}
+.aboutsk .aboutsk__item1 .about__Smtxt {
+  font-size: 1.0625rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
+.aboutsk .aboutsk__item1 .about__Smtxt:hover {
+  color: #F0390F;
+}
+.aboutsk .aboutsk__item1 .about__Smtxt::after {
+  content: " ";
+  height: 5px;
+  width: 0px;
+  border-radius: 20px;
+  display: inline-block;
+  background: #F0390F;
+}
+.aboutsk .aboutsk__item1 .about__Smtxt:hover::after {
+  animation: smBar 0.5s ease;
+  width: 100px;
+}
+.aboutsk .aboutsk__item2 {
+  width: 85%;
+}
+.aboutsk .aboutsk__item2 .aboutsk__img1 {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */
