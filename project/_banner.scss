@@ -5,10 +5,19 @@
 	flex-wrap: wrap;
 	padding: $body-P;
 
+	@include sm-mediaquery {
+		flex-direction: column;
+		padding: 3em 15px;
+	}
+
 	.banner__Item1 {
-		width: 35%;
+		width: 32%;
 		height: 50%;
 		color: $primary-txt-color;
+
+		@include sm-mediaquery {
+			width: 100%;
+		}
 
 		.banner__Ltxt {
 			font-size: $font-xxl;
@@ -21,12 +30,19 @@
 	.banner__item2 {
 		width: 55%;
 
+		@include sm-mediaquery {
+			width: 100%;
+		}
+
 		.banner__img2 {
 			width: 100%;
 		}
 	}
 	.banner__item3 {
 		width: 20%;
+		display: flex;
+		align-items: center;
+		gap: 1em;
 
 		.ctrBtn {
 			@include ctrbtn;

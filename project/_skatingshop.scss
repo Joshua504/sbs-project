@@ -1,0 +1,43 @@
+.skshop {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	@include sm-mediaquery {
+		flex-direction: column-reverse;
+	}
+
+	.skshop__item1 {
+		padding: 0 15px;
+		width: 60%;
+
+		@include sm-mediaquery {
+			width: 100%;
+		}
+
+		.skshop__img {
+			width: 100%;
+		}
+	}
+
+	.skshop__item2 {
+		padding: 0 15px;
+		width: 30%;
+
+		@include sm-mediaquery {
+			width: 100%;
+		}
+
+		.skshop__Ltxt {
+			@include subHdLtxt;
+			width: 70%;
+		}
+		.skshop__Mtxt {
+			@include subHdMtxt;
+			padding-bottom: 26px;
+		}
+		.skshop__Smtxt {
+			@include smTxt;
+		}
+	}
+}

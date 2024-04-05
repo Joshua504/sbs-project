@@ -1,0 +1,129 @@
+.rev {
+	padding: $body-Py;
+	margin-top: 90px;
+	background: $secondarybg-color;
+	position: relative;
+
+	.rev__item1 {
+		text-align: center;
+		padding-bottom: $subheadCon-pb;
+
+		.rev__Ltxt {
+			@include subHdLtxt;
+			color: $secondary-txt-color;
+		}
+	}
+
+	.rev__item2 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 2em;
+
+		@include sm-mediaquery {
+			flex-direction: column;
+			padding: 0 15px;
+			gap: 7em;
+		}
+
+		.rev__imgCon {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100px;
+			width: 100px;
+			background: $primarybg-color;
+			border-radius: 50px;
+			// margin: 0 auto;
+			position: absolute;
+			top: -4em;
+			left: 5em;
+
+			@include sm-mediaquery {
+				left: 9.5em;
+			}
+		}
+		.rev__Mtxt {
+			font-size: $font-m;
+			margin-top: $reviewBtxt-mt;
+			color: $secondary-txt-color;
+		}
+		.rev__img2 {
+			padding: 15px 0;
+		}
+		.rev__Smtxt {
+			@include subHdMtxt;
+			color: $secondary-txt-color;
+			padding-top: 0;
+			line-height: 24px;
+		}
+
+		.rev__cardsm {
+			background-color: $basicBg-color;
+			padding: $review-sm-p;
+			width: 18%;
+			text-align: center;
+			border-radius: 15px;
+			position: relative;
+			padding-top: 20px;
+			// margin: 0 15px;
+
+			@include sm-mediaquery {
+				width: 100%;
+			}
+		}
+
+		.rev__cardbg {
+			width: 35%;
+			text-align: center;
+			border-radius: 15px;
+			padding: $review-m-p;
+			// margin: 0 15px;
+			padding-top: 3em;
+			background: $primarybg-color;
+			position: relative;
+
+			@include sm-mediaquery {
+				width: 100%;
+			}
+
+			.imgCon--mod {
+				left: 13.5em;
+
+				@include sm-mediaquery {
+					left: 9.5em;
+				}
+			}
+			.Mtxt--mod {
+				color: $primary-txt-color;
+			}
+			.smtxt--mod {
+				color: $primary-txt-color;
+				line-height: 28px;
+			}
+			.img2--mod {
+				padding: 25px 0;
+			}
+		}
+	}
+
+	.rev__item3 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 0.5em;
+		position: absolute;
+		top: 45.5em;
+		left: 45em;
+
+		@include sm-mediaquery {
+			top: 95.5em;
+			left: 9.5em;
+		}
+
+		.rev__ctr {
+			@include ctrbtn;
+			background-color: $basicBg-color;
+		}
+	}
+}

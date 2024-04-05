@@ -1,0 +1,38 @@
+.skvd {
+	padding: 90px 30px;
+
+	@include sm-mediaquery {
+		padding: 90px 15px;
+	}
+
+	.skvd__item1 {
+		text-align: center;
+		padding-bottom: $subheadCon-pb;
+		color: $primary-txt-color;
+
+		.skvd__Ltxt {
+			@include subHdLtxt;
+			padding-bottom: 0;
+		}
+		.skvd__Mtxt {
+			@include subHdMtxt;
+		}
+	}
+	.skvd__item2 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 1em;
+
+	@include sm-mediaquery {
+    flex-direction: column;
+  }
+
+		.skvd__vd {
+			margin-bottom: 32px;
+		}
+		.skvd__Smtxt {
+			@include smTxt;
+		}
+	}
+}

@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 	/* --------------------------------- variables -------------------------------- */
-	@import "variables";
+@import "variables";
 /* ---------------------------------- reset --------------------------------- */
 @import "reset";
 /* --------------------------------- mixins --------------------------------- */
@@ -13,3 +13,9 @@
 @import "skatingClass";
 /* ------------------------------ aboutsection ------------------------------ */
 @import "about";
+/* ------------------------------ skatingvideos ----------------------------- */
+@import "skatingvideo";
+/* ------------------------------- skatingshop ------------------------------ */
+@import "skatingshop";
+/* ------------------------------- testimonial ------------------------------ */
+@import "review";

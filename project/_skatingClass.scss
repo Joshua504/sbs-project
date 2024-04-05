@@ -20,9 +20,18 @@
 		align-items: center;
 		gap: 1em;
 
+		@include sm-mediaquery {
+			gap: 2em;
+			flex-direction: column;
+		}
+
 		.skClass__cardcon {
-			width: 27%;
+			width: 29%;
 			padding: 0 15px;
+
+			@include sm-mediaquery {
+				width: 100%;
+			}
 
 			.skClass__card {
 				padding: $card-p;

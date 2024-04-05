@@ -1,45 +1,92 @@
-.nav{
-  display: flex;
-  justify-content: space-between;
-  padding: $navCon-p;
+.nav {
+	display: flex;
+	justify-content: space-between;
+	padding: $navCon-p;
 
-  .logocon{
-    display: flex;
-    align-items: center;
+	@include sm-mediaquery {
+		padding: 27px 5px;
+		border-bottom: 2px solid $primary-txt-color;
+	}
 
-    .harmburger{
-      cursor: pointer;
-      display: none;
+	.logocon {
+		display: flex;
+		align-items: center;
+		@include sm-mediaquery {
+			width: 100%;
+			justify-content: space-between;
+		}
 
-      .bars{
-        height: 4px;
-        width: 30px;
-        border-radius: 20px;
-        background: $primary-txt-color;
-        display: block;
-        margin-bottom: 4px;
-      }
-    }
-  }
+		.harmburger {
+			cursor: pointer;
+			display: none;
 
-  .nav__linkcon{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2em;
+			@include sm-mediaquery {
+				display: block;
+			}
 
-    .nav__links{
-      font-size: $font-sm;
-      text-transform: capitalize;
-      color: $primary-txt-color;
-      padding: $navLinks-p;
-      border-radius: 50px;
-      transition: .4s ease-in;
+			.bars {
+				height: 4px;
+				width: 30px;
+				border-radius: 20px;
+				background: $primary-txt-color;
+				display: block;
+				margin-bottom: 4px;
+			}
+		}
+	}
 
-      &:hover{
-        background-color: $basicBg-color;
-        color: $secondary-txt-color;
-      }
-    }
-  }
+	.nav__linkcon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 2em;
+
+		@include sm-mediaquery {
+			position: absolute;
+			flex-direction: column;
+			background: $primary-txt-color;
+			padding: 20px;
+			width: 100%;
+			left: 0;
+			top: 7.8em;
+			display: none;
+		}
+
+		.nav__links {
+			font-size: $font-sm;
+			text-transform: capitalize;
+			color: $primary-txt-color;
+			padding: $navLinks-p;
+			border-radius: 50px;
+			transition: 0.4s ease-in;
+
+			@include sm-mediaquery {
+				color: $secondary-txt-color;
+				width: 100%;
+			}
+
+			&:hover {
+				background-color: $basicBg-color;
+				color: $secondary-txt-color;
+
+				@include sm-mediaquery {
+				background-color: transparent;
+			}
+			}
+		}
+	}
+
+	.nav__icons {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 5em;
+		@include sm-mediaquery {
+			display: none;
+		}
+
+		.nav__iconCon {
+			font-size: $font-l;
+		}
+	}
 }

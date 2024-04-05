@@ -1,5 +1,10 @@
 @mixin sm-mediaquery() {
-	@media (max-width: 760px) {
+	@media (width <= 767px) {
+		@content;
+	}
+}
+@mixin md-mediaquery() {
+	@media (767px < width <= 1023px) {
 		@content;
 	}
 }
@@ -9,6 +14,8 @@
 	text-transform: uppercase;
 	font-weight: $fontW-xxl;
 	cursor: pointer;
+	width: 60%;
+	color: $primary-txt-color;
 
 	&:hover {
 		color: $basicBg-color;
@@ -16,7 +23,7 @@
 
 	&::after {
 		content: " ";
-		height: 5px;
+		height: 2px;
 		width: 0px;
 		border-radius: 20px;
 		display: inline-block;
@@ -37,12 +44,16 @@
 }
 /* ------------------------------- ctrButtons ------------------------------- */
 @mixin ctrbtn {
-	height: 50px;
-	width: 50px;
+	height: 70px;
+	width: 70px;
 	background-color: $secondarybg-color;
 	border-radius: 50px;
-	display: inline-block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	padding: 10px 20px;
+	font-size: $font-l;
+	color: $secondary-txt-color;
 	cursor: pointer;
 	transition: $normal-trn;
 
@@ -54,10 +65,11 @@
 @mixin subHdLtxt {
 	font-size: $font-xl;
 	text-transform: capitalize;
-  padding-bottom: $subheadLtxt-pb;
+	padding-bottom: $subheadLtxt-pb;
+	color: $primary-txt-color;
 }
 @mixin subHdMtxt {
 	font-size: $font-sm;
 	padding-top: 15px;
-  line-height: 30px;
+	line-height: 30px;
 }
