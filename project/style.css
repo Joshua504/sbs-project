@@ -650,4 +650,121 @@ body {
 }
 .rev .rev__item3 .rev__ctr:hover {
   background: #F0390F;
+}
+
+/* --------------------------------- footer --------------------------------- */
+.footer {
+  padding-top: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer__Ltxt {
+  font-size: 30px;
+  font-weight: 700;
+  color: #2B2B2B;
+  padding-bottom: 15px;
+  text-transform: capitalize;
+}
+.footer .footer__item1 {
+  padding: 0 15px;
+}
+.footer .footer__item1 .footer__iconCon {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding-bottom: 22px;
+}
+.footer .footer__item1 .footer__iconCon .footer__icon {
+  font-size: 20px;
+  color: #3E0BCE;
+}
+.footer .footer__item1 .footer__iconCon .footer__Smtxt {
+  font-size: 1.0625rem;
+  padding-top: 15px;
+  line-height: 30px;
+  padding-top: 0;
+  font-size: 17px;
+  text-transform: capitalize;
+}
+.footer .footer__item2 {
+  border-left: 1px solid #F0390F;
+  padding-left: 40px;
+}
+.footer .footer__item2 .footer__newsCon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 1em;
+}
+.footer .footer__item2 .footer__newsCon .footer__inpt {
+  padding: 10px 5px;
+  border-radius: 10px;
+  border: 1px solid #2B2B2B;
+  font-size: 17px;
+  font-weight: 500;
+}
+.footer .footer__item2 .footer__newsCon .footer__btn {
+  font-size: 17px;
+  text-transform: capitalize;
+  font-weight: 500;
+  padding: 12px 60px;
+  color: #FFFFFF;
+  background: #F0390F;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.footer .footer__item2 .footer__usLink {
+  display: flex;
+  gap: 6em;
+}
+.footer .footer__item2 .footer__usLink .footer__linkCon {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+.footer .footer__item2 .footer__usLink .footer__linkCon .footer__links {
+  font-size: 17px;
+  text-transform: capitalize;
+  color: #2B2B2B;
+  transition: all 0.5s linear;
+}
+.footer .footer__item2 .footer__usLink .footer__linkCon .footer__links:hover {
+  color: #3E0BCE;
+}
+.footer .footer__item2 .footer__usLink .footer__social {
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+  gap: 6px;
+}
+.footer .footer__item2 .footer__usLink .footer__social .social__con {
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  background: #2B2B2B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+.footer .footer__item2 .footer__usLink .footer__social .social__con:hover {
+  background: #3E0BCE;
+}
+
+.copy {
+  margin-top: 90px;
+  padding: 25px 0;
+  text-align: center;
+  background: #F0390F;
+}
+.copy .copy__txt {
+  font-size: 1.0625rem;
+  padding-top: 15px;
+  line-height: 30px;
+  font-size: 17px;
+  color: #FFFFFF;
 }/*# sourceMappingURL=style.css.map */
