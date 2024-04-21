@@ -73,3 +73,11 @@
 	padding-top: 15px;
 	line-height: 30px;
 }
+
+@mixin inputs {
+	padding: 10px 5px;
+	border-radius: 10px;
+	border: 1px solid $primary-txt-color;
+	font-size: 17px;
+	font-weight: 500;
+}
